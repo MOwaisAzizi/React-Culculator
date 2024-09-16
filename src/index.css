@@ -10,7 +10,7 @@ body {
 }.app{
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  padding: 5px;
+  padding: 1px 5px 5px 5px;
   width: 400px;
   border-radius: 10px;
 }.input{
@@ -20,13 +20,16 @@ body {
     background-color: #e6e6e6;
     padding: 10px;
     font-size: 25px;
+    display: flex;
+    align-items: center;
     height: 50px;
+    /* height: 50px; */
   
 }.buttons{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 1px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .btn{
   font-size: 20px;
@@ -52,8 +55,13 @@ body {
 }
 @media screen and (max-width: 450px) {
   .app {
-  width: 290px;
+  width: 270px;
   }.input{
     width: 93%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .app {
+  width: 250px;
   }
 }
