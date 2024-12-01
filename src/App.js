@@ -28,7 +28,6 @@ function App() {
     if (operation == '^') setInput(String(resultArr.reduce((arr, cur) => Math.pow(arr, cur))))
   }
 
-
   function operationHandler(operation) {
     if (resultArr.length == 2) return HandleEqual()
     if (operation == '+') setInput(input + '+')
